@@ -1,2 +1,19 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+1. Proje
+(22,27,16,2,18,6]
+Yukarıda verilen dizinin sort türüne göre aşamalarını yazınız.
+
+[22,27,16,2,18,6]  (n)                                           1.aşama
+[(2),27,16,22,18,6] (n-1)  22 ile 2 elemanları yer değiştirir.   2.aşama
+[(2,6),16,22,18,27]  (n-2)  27 ile 6 elemanları yer değiştirir.  3.aşama
+[(2,6,16),18,22,27] (n-3)  18 ile 22 elemanşarı yer değiştirir.  4.aşama
+
+Big O gösterimi :O(n^2) 
+
+Time Complexity: Average case'dir.
+
+[7,3,5,8,2,9,4,15,6] Dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+[(2),3,5,8,7,9,4,15,6] 7 ile 2 elemanları yer değiştirir.                       1.aşama
+[(2,3),5,8,7,9,4,15,6] 3 elemanı ilk elemandan bir sayı büyüktür sabit kalır.   2.aşama
+[(2,3,4),8,7,9,5,15,6] 4 elemanı ile 5 elemanı yer değiştirir.                  3.aşama
+[(2,3,4,5),7,9,8,15,6] 5 elemanı ile 8 elemanı yer değiştirir.                  4.aşama
